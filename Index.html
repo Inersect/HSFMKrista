@@ -1,3 +1,58 @@
+<!DOCTYPE html>
 <html>
-    <p>hoi</p>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script> 
+    <script src="https://unpkg.com/maplibre-gl@2.1.6/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@2.1.6/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="./Javascript/Maplibre.js"></script>
+    <title>HSFM09</title>
+</head>
+<body>
+    <!-- Navigatie balk -->
+    <div class="topnav">
+        <a class="links"> <b>Londen, wat wil je weten?</b></a>
+        <div class="topnav-right">
+            <a class="rechts" href="#home">Over Londen</a>
+            <a class="rechts" href="#news">Kaart en statistiek</a>
+        </div>
+    </div>
+
+    <!-- Header image -->
+    <div id="header"> </div>
+
+    <!-- Map grid -->
+    <div class="grid-container">
+        <div class="card">
+            <div id="map" class="map"></div>
+            <h1>Map of the city of London</h1>
+        </div>
+        <div class="card">
+            <div id="map" class="map"></div>
+            <p>Map text</p>
+        </div>
+        <div class="card" class="map">
+            <div id="map"></div>
+            <p>Map text</p>
+        </div>
+        <div class="card" class="map">
+            <div id="map"></div>
+            <p>Map text</p>
+        </div>
+    </div>
+
+<script src="./Javascript/main.js"></script>
+
+
+<div class="kader_links3">
+    <div id="mapLibre" style="width: 100%; height: 420px;"></div>
+      <script type="text/javascript" src="./Javascript/Maplibre.js"></script>  
+</div>
+
+</body>
 </html>
