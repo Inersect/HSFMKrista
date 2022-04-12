@@ -2,15 +2,27 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!-- Leaflet -->
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script> 
-    <script src="https://unpkg.com/maplibre-gl@2.1.6/dist/maplibre-gl.js"></script>
-    <link href="https://unpkg.com/maplibre-gl@2.1.6/dist/maplibre-gl.css" rel="stylesheet" />
-    <script src="./Javascript/Maplibre.js"></script>
+    <!--  -->
+
+    <!-- OpenLayers -->
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/build/ol.js"></script>
+    <!--  -->
+
+    <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script> -->
+
+    <!-- MapLibre -->
+    <script src='https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.js'></script>
+    <link href='https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.css' rel='stylesheet' />
+    <!--  -->
+
     <title>HSFM09</title>
 </head>
 <body>
@@ -29,30 +41,25 @@
     <!-- Map grid -->
     <div class="grid-container">
         <div class="card">
-            <div id="map" class="map"></div>
+            <div id="mapLeaflet" class="map"></div>
+                <script src="./Javascript/main.js"></script>
             <h1>Map of the city of London</h1>
         </div>
         <div class="card">
-            <div id="map" class="map"></div>
+            <div id="mapLibre" class="map"></div>
+                <script src="./Javascript/Maplibre.js"></script>
             <p>Map text</p>
         </div>
         <div class="card" class="map">
-            <div id="map"></div>
+            <div id="openLayers" class="map"></div>
+                <script src="./Javascript/openlayers.js"></script>
             <p>Map text</p>
         </div>
         <div class="card" class="map">
-            <div id="map"></div>
+            <iframe id="gmap_canvas" class="map" src="https://maps.google.com/maps?q=londen&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             <p>Map text</p>
         </div>
     </div>
-
-<script src="./Javascript/main.js"></script>
-
-
-<div class="kader_links3">
-    <div id="mapLibre" style="width: 100%; height: 420px;"></div>
-      <script type="text/javascript" src="./Javascript/Maplibre.js"></script>  
-</div>
 
 </body>
 </html>
