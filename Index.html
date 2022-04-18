@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
-
     <!-- Leaflet -->
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -11,23 +11,17 @@
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script> 
     <!--  -->
-
     <!-- OpenLayers -->
     <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/build/ol.js"></script>
     <!--  -->
-
-    <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script> -->
-
     <!-- MapLibre -->
     <script src='https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.js'></script>
     <link href='https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.css' rel='stylesheet' />
     <!--  -->
-
     <!-- Chart.JS -->
     <script href="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!--  -->
-
+    <!--Naam document-->
     <title>HSFM09</title>
 </head>
 <body>
@@ -51,7 +45,7 @@
         <div class="card">
             <div id="mapLeaflet" class="map"></div>
                 <script src="./Javascript/main.js"></script>
-            <h1>Map of the city of London</h1>
+            <h1>Londen</h1>
             <p>Wist je dat Londen een oppervlakte heeft van 1572 vierkante kilometers? Dat is minimaal vier keer de grote van Rotterdam!</p>
         </div>
         <div class="card">
@@ -63,17 +57,66 @@
         <div class="card" class="map">
             <div id="openLayers" class="map"></div>
                 <script src="./Javascript/openlayers.js"></script>
-                     <h1>Map of the city of London</h1>
-                         <p>Map text</p>
+                     <h1>Ligging Verenigd Koninkrijk</h1>
+                         <p>Het Verenigd Koninkrijk ligt voor ons land aan de andere kant van de Noordzee. Er zijn meerdere manieren om hier te komen, het meet logische 
+                            is voor veel het vliegtuig, maar je kan ook via Parijs met de trein of zelfs vanuit ons kleine landje met de boot!
+                         </p>
         </div>
         <div class="card" class="map">
             <iframe id="gmap_canvas" class="map" src="https://maps.google.com/maps?q=londen&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>
-               <h1>Map of the city of London</h1>
-                  <p>Map text</p>
+               <h1>Bereken de snelste route!</h1>
+                  <p>Hierboven is een kaart te zien van Google Maps. Je kan hier inzoomen, uitzoomen en nog makkelijker: bereken je eigen route naar de grote toeristenspots van Londen
+                     zoals de Big Ben, Trafalgar Square en noem maar op!
+                  </p>
+        </div>
+        <div class="card" class="map">
+                <canvas id="myChart" width="350" height="350" style="display: block; box-sizing: border-box;"></canvas>
+                    <script src="./Javascript/chart.js"></script>
+                        <h1>Inwoners van Engeland over de afgelopen 100 jaar</h1>
+        </div>
+        <div class="card" class="img">
+            <img src="../HSFMKrista/Imgs/geloof.png">
+                   <h1>Geloofsovertuiging in het Verenigd Koninkrijk</h1>
         </div>
     </div>
 
-    <canvas id="myChart"></canvas>
+<!-- <script>
+        const ctx = document.getElementById('myChart');
+        const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['1900', '1920', '1940', '1960', '1980', '2000', '2020'],
+                datasets: [{
+                    label: 'Bevolking per jaar in miljoenen',
+                    data: [39, 43, 47, 53, 56, 59, 65],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        </script> -->
 
     <footer>
         <p>Gemaakt door Krista de Moor</p>
@@ -81,41 +124,3 @@
 
 </body>
 </html>
-
-<script>
-const ctx = document.getElementById('myChart');
-const myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Baguette'],
-        datasets: [{
-            label: 'Bevolking per jaar',
-            data: [10, 4, 14, 17, 7, 13, 0],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 3
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
-</script>

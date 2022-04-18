@@ -1,0 +1,49 @@
+Keuze over het onderwerp:
+    Het Verenigd Koninkrijk is een land waar ik sinds de eerste keer dat ik er geweest ben telkens weer naartoe wilde. De cultuur, architectuur maar ook de mensen en accenten
+    maakte het voor mij een geweldig land. De focus op Londen kwam eigenlijk zonder dat ik het door had. Ik ben sinds mijn eerste keer in 2012 nog drie keer geweest en ik
+    raak nooit uitgekeken. Om deze reden besloot ik meer te kijken naar de ligging van Londen in het land en bevolking van het Verenigd Koninkrijk.
+
+    De doelgroep is voornamelijk toeristen. Door middel van de kaarten die in de website staan kunnen mensen zich vast orienteren op wat er te zien is in Londen en het Verenigd
+    Koninkrijk zelf. Londen is natuurlijk niet de enige grote stad in het VK. Zowel de data als de visualisaties zijn afgeleid van het onderwerp en wat ik er neer wilde zetten.
+    Hiernaast was het voor mij ook een reden om wat dieper naar het land te kijken wat betreft de inwoners over de jaren heen en geloofsovertuigingen.
+
+De technische aspecten:
+    Leaflet -
+        Leaflet was een kaart waar ik bij vorige momenten moeite mee heb gehad om toe te passen. Bij het gebruiken voor deze website heb ik minder problemen gehad dan ik dacht
+        dat ik zou hebben. Deze kaart is toegevoegd om een paar hotspots van de stad aan te geven. De iconen zijn helaas niet gelukt maar ik heb de locatie vast kunnen stellen
+        op het centrum van Londen. De code van de Leaflet staat in de main.js.
+
+    MapLibre -
+        Maplibre was een tool die ik ten eerste al wel interessant vond door de kleuren in de kaart. Er zijn natuurlijk meerdere soorten kaartstijlen die gebruikt kunnen worden,
+        maar deze trok mijn interesse. Het doel met deze kaart was om te laten zien hoe groot het Verenigd Koninkrijk is en het meer heeft dan alleen de bekende hoofdstad. Het toepassen
+        en invoegen van de kaart heeft soms wat moeite gekost. Dit kwam omdat ik soms wat ruzie had met de styling (plaatsing in de grid die ik gemaakt had voor alle kaarten en visualisaties)
+        en de zoom functie in de js code zelf. Verder is deze kaart zonder relatief grote problemen tot stand gekomen. De code is te vinden in de gelijknamige Maplibre.js
+
+    OpenLayers -
+        De OpenLayers kaart is bijna volledig gelukt. Wat nog te zien is is een puntje waar OpenStreetMap contributors in staat. Deze heb ik niet kunnen vinden in mijn code en
+        heb ik dus besloten om te laten zitten. Dit was voor mij de makkelijkste kaart om toe te voegen in zowel de site zelf als de grid. Waar ik bij andere nog wel eens het 
+        idee had dat het niet zou werken was dit bij deze snel gedaan. Het idee was om deze kaart verder uit te zoomen om zo te laten zien dat het Verenigd Koninkrijk helemaal
+        niet zo super ver weg is van ons kleine landje. Ook heb ik in de tekst eronder aangegeven welke manieren van reizen er zijn om naar het land te komen. De code is te vinden
+        in openlayers.js
+
+    Google -
+        De Google kaart is toegevoegd omdat deze eigenlijk het meest simpel werkte van de andere kaarten waar ik nog uit kon kiezen. Dit kwam vooral door tijdtekort aan mijn kant.
+        Toch denk ik dat deze kaart wel een mooie toevoeging brengt om makkelijk routes te kunnen plannen en meer te kunnen inzoomen/ gebruik te maken van satteliet kaarten. De
+        code bevat geen JavaScript en om deze redden staat alle code die er is in de index.html.
+
+    Chart.js -
+        De chart leek een van de makkelijke manieren van een grafiek toevoegen in de tijd die ik nog had (nog geen twee dagen). Hij laat de bevolking van het Verenigd Koninkrijk
+        zien vanaf 1900 tot 2000. Ik vond het belangrijk om bij een site over een stad/land ook wat meer demografisch informatie weer te geven. Het invoegen gaf niet veel problemen,
+        deze kwamen pas kijken bij het stijlen van de kaart. Omdat er in de originele code dubbele gegevens stonden als het ging om de hoogte en breedte werkte dit niet zoals geplanned.
+        toch ben ik er uitgekomen met een paar extra ogen van een vriend die toevallig een ICT opleiding doet.
+
+    InfoGram - 
+        De infogram is een afbeelding die is toegevoegd door hem te downloaden en dan als img in de index te zetten. Hier is ook weer voor gekozen door de tijdsnood waar ik mij in
+        bevond. Hij geeft aan hoe de geloofsindeling is het Verenigd Koninkrijk. Deze was van de twee visualisaties het meest gemakkelijk om te doen sinds ik meer bekend ben met het
+        toevoegen van afbeeldingen in mijn code.
+
+Het proces:
+    Deze site was een stroef proces. Door de maar zeven weken die wij hadden moest ik al snel een streep zetten door mijn originele plannen en het wat simpeler aanpakken. De meeste
+    problemen had ik ten eerste met mijn eigen kennis die weggezakt was na een jaar niet meer met code werken. Ondanks dat ik mijn kennis heb kunnen opfrissen was het opnieuw
+    een uitdaging om deze site samen te stellen. Ten tweede was het bedenken van verschillende onderwerpen voor de kaarten een grotere uitdaging dan ik had gedacht. Ik heb niet
+    alles kunnen afbeelden van wat ik in gedachte had maar toch ben ik trots op wat ik uiteindelijk in de laatste week heb neer kunnen zetten.

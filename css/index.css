@@ -78,3 +78,7 @@ body {
   width: 100%;
 }
 
+#myChart{
+  height: 400;
+  width: 400;
+}
