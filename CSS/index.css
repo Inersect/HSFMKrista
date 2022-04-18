@@ -1,18 +1,16 @@
-#body {
-  height: 180%;
-  font-family: Verdana, sans-serif;
+body {
   font-size: 15px;
   line-height: 1.5;
+  overflow-x: hidden;
 } 
 
 #header {
-    height: 100%; 
+    height: 100vh; 
     background-image: url("../Imgs/Header4.jpg") !important; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
-    width: 2000px;
-    height: 980px;
+    width: 100%;
 }
 
 body {
@@ -65,9 +63,8 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  gap: 10rem;
-  padding: 10px;
-  margin: 0 10rem;
+  gap: 5rem;
+  margin: 0 5rem;
 }
 
 .card {

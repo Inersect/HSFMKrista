@@ -23,18 +23,14 @@
     <link href='https://unpkg.com/maplibre-gl@2.1.9/dist/maplibre-gl.css' rel='stylesheet' />
     <!--  -->
 
+    <!-- Chart.JS -->
+    <script href="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!--  -->
+
     <title>HSFM09</title>
 </head>
 <body>
-    <!-- Navigatie balk -->
-    <!-- <div class="topnav">
-        <a class="links"> <b>Londen, wat wil je weten?</b></a>
-        <div class="topnav-right">
-            <a class="rechts" href="#home">Over Londen</a>
-            <a class="rechts" href="#news">Kaart en statistiek</a>
-        </div>
-    </div> -->
-
     <!-- Header image -->
     <div id="header"> </div>
 
@@ -77,9 +73,49 @@
         </div>
     </div>
 
+    <canvas id="myChart"></canvas>
+
     <footer>
         <p>Gemaakt door Krista de Moor</p>
     </footer>
 
 </body>
 </html>
+
+<script>
+const ctx = document.getElementById('myChart');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Baguette'],
+        datasets: [{
+            label: 'Bevolking per jaar',
+            data: [10, 4, 14, 17, 7, 13, 0],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 3
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
